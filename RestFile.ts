@@ -5,7 +5,6 @@ import {
 
 import {
   Airport,
-  airportArray,
   AirportLookupService,
   AirportNotFoundError,
   ramdomAirport
@@ -30,18 +29,12 @@ class FlightService {
 
 @Path('/*')
 class AirportService {
-  
-
-
-  // @Path(':name')
   @GET
   airportName(@Context context: ServiceContext, @PathParam('name') name: string): any {
-    // return ramdomAirport();
     console.log(ramdomAirport());
     context.next()
   }
 }
-
 
 @Path('/flight')
 class FlightCodeService {
@@ -66,9 +59,7 @@ class AirportCodeService {
       } else {
         throw error;
       }
-      // return (error as Airport)
     }
-    // return <Airport>airportArray.find((airport): boolean => (airport.airportCode === code));
   }
 }
 
@@ -79,8 +70,3 @@ export {
   AirportCodeService,
   FlightCodeService
 };
-
-
-
-// middleware 
-// context next()
