@@ -1,0 +1,144 @@
+###
+POST http://localhost:3000/airports
+Content-Type: application/json
+
+{
+  "airliner_name": "American Airlines",
+  "airport_location": "Buffalo",
+  "airport_code": "BUF",
+  "airport_name": "Buffalo Niagara International Airport"
+}
+
+
+###
+
+
+GET http://localhost:3000/airports
+
+###
+
+POST http://localhost:3000/flights
+Content-Type: application/json
+
+{
+  "flight_number": "006A3",
+  "departure_location": "abc",
+  "destination_location": "tdd"
+}
+
+
+###
+
+DELETE http://localhost:3000/flights/undefined
+
+###
+
+DELETE http://localhost:3000/airports/undefined
+
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GET http://localhost:3000/healthcheck
+
+###
+
+GET http://localhost:3000/flight
+
+###
+
+GET http://localhost:3000/airport/indigo
+
+###
+
+http://localhost:3000/airport/123
+
+###
+http://localhost:3000/flight/123
+
+###
+GET http://localhost:3000/users
+
+###
+GET http://localhost:3000/users/2
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "id": "3",
+  "firstname": "api",
+  "lastname": "user",
+  "location": "api post"
+}
+
+###
+
+PUT http://localhost:3000/users/2
+Content-Type: application/json
+
+{
+  "firstname": "api update",
+  "lastname": "user update",
+  "location": "api post update"
+}
+
+###
+DELETE http://localhost:3000/users/3
+

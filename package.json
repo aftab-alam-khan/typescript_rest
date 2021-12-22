@@ -1,0 +1,25 @@
+{
+  "name": "flightproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx tsc",
+    "start": "nodemon src/index.js",
+    "pgtest": "nodemon api.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1",
+    "pg": "8.7.1",
+    "typescript": "4.4.4",
+    "typescript-ioc": "3.2.2",
+    "typescript-rest": "3.0.4",
+    "typescript-rest-ioc": "1.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.15"
+  }
+}

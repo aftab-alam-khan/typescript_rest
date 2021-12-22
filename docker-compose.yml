@@ -1,0 +1,12 @@
+services:
+  postgress:
+    image: postgres
+    ports:
+    - '5432:5432'
+    environment:
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgresdb:/var/lib/postgresql/data
+volumes:
+  postgresdb:
+    external: true
