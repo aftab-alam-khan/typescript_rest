@@ -1,0 +1,12 @@
+/node_modules
+.dockerignore
+Dockerfile
+docker-compose.yml
+.DS_Store
+
+# production
+/build
+/dist
+
+#mis
+.env

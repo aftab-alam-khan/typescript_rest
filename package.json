@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "npx tsc",
-    "start": "nodemon src/index.js",
+    "predev": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon dist/index.js",
+    "dev_local": "npx tsc --watch",
     "pgtest": "nodemon api.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "10.0.0",
     "express": "4.17.1",
     "pg": "8.7.1",
     "typescript": "4.4.4",

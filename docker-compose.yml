@@ -1,12 +1,32 @@
+version: '3.9'
 services:
   postgress:
-    image: postgres
+    image: postgres:14
+    restart: always
     ports:
     - '5432:5432'
     environment:
       POSTGRES_PASSWORD: password
     volumes:
       - postgresdb:/var/lib/postgresql/data
+  
+  api-server:
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/usr/src/app
+    command: npm run dev
+    restart: always
+    environment:
+      POSTGRESQL_HOST: postgress
+      POSTGRESQL_PORT: 5432
+      POSTGRESQL_USERNAME: postgres
+      POSTGRESQL_PASSWORD: password
+      POSTGRESQL_DATABASE_NAME: flight_project
+      LOCALHOST_PORT: 3000
+    depends_on:
+      - postgress
 volumes:
   postgresdb:
     external: true
