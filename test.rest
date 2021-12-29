@@ -17,7 +17,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE  http://localhost:3000/airports
+DELETE  http://localhost:3000/airports/BUF1
 
 ###
 GET http://localhost:3000/flights
@@ -33,4 +33,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE  http://localhost:3000/flights
+DELETE  http://localhost:3000/flights/006A31
