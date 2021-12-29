@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "predev": "npx tsc",
+    "prestart": "npx tsc",
     "start": "node dist/index.js",
     "dev": "nodemon dist/index.js",
     "dev_local": "npx tsc --watch",

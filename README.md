@@ -3,9 +3,6 @@
 ## Available Scripts
 
 In the project directory, you can run:
-first compile the project
-
-### `npm run compile`
 
 ### `npm start`
 
