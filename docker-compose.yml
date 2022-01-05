@@ -25,6 +25,11 @@ services:
       POSTGRESQL_PASSWORD: password
       POSTGRESQL_DATABASE_NAME: flight_project
       LOCALHOST_PORT: 3000
+      MIKRO_ORM_HOST: postgress
+      MIKRO_ORM_PORT: 5432
+      MIKRO_ORM_USER: postgres
+      MIKRO_ORM_PASSWORD: password
+      MIKRO_ORM_DB_NAME: flight_project
     depends_on:
       - postgress
 volumes:

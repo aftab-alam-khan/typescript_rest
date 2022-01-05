@@ -38,5 +38,5 @@ Server.buildServices(app,
   DeleteFlightService);
 
 app.listen(process.env.LOCALHOST_PORT, function () {
-  console.log(`Rest Server listening on port ${process.env.LOCALHOST_PORT}!`);
+  console.log(`Rest Server listening on port ${process.env.LOCALHOST_PORT}! test`);
 });
